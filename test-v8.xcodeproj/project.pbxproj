@@ -12,7 +12,23 @@
 		C2BC5D5D2254D7C20020F348 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BC5D5B2254D7C20020F348 /* Main.storyboard */; };
 		C2BC5D5F2254D7C60020F348 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2BC5D5E2254D7C60020F348 /* Assets.xcassets */; };
 		C2BC5D622254D7C60020F348 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BC5D602254D7C60020F348 /* LaunchScreen.storyboard */; };
-		C2BC5D652254D7C60020F348 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5D642254D7C60020F348 /* main.m */; };
+		C2BC5D652254D7C60020F348 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5D642254D7C60020F348 /* main.mm */; };
+		C2BC5D7D2254D8580020F348 /* include in Resources */ = {isa = PBXBuildFile; fileRef = C2BC5D7C2254D8580020F348 /* include */; };
+		C2BC5D872254D9740020F348 /* ModuleInternal.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5D832254D9740020F348 /* ModuleInternal.mm */; };
+		C2BC5D882254D9740020F348 /* Runtime.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5D862254D9740020F348 /* Runtime.mm */; };
+		C2BC5D8C2254DA040020F348 /* Helpers.mm in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5D8A2254DA040020F348 /* Helpers.mm */; };
+		C2BC5D952254DAA90020F348 /* libv8_libplatform.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D8D2254DAA80020F348 /* libv8_libplatform.a */; };
+		C2BC5D962254DAA90020F348 /* libv8_libsampler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D8E2254DAA80020F348 /* libv8_libsampler.a */; };
+		C2BC5D972254DAA90020F348 /* libv8_libbase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D8F2254DAA80020F348 /* libv8_libbase.a */; };
+		C2BC5D982254DAA90020F348 /* libv8_initializers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D902254DAA80020F348 /* libv8_initializers.a */; };
+		C2BC5D992254DAA90020F348 /* libv8_external_snapshot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D912254DAA80020F348 /* libv8_external_snapshot.a */; };
+		C2BC5D9A2254DAA90020F348 /* libv8_base.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D922254DAA80020F348 /* libv8_base.a */; };
+		C2BC5D9B2254DAA90020F348 /* libv8_init.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D932254DAA80020F348 /* libv8_init.a */; };
+		C2BC5D9C2254DAA90020F348 /* libtorque_generated_initializers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2BC5D942254DAA90020F348 /* libtorque_generated_initializers.a */; };
+		C2BC5DA32254DB780020F348 /* platform-ios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5D9F2254DB780020F348 /* platform-ios.cpp */; };
+		C2BC5DA42254DB780020F348 /* stack_trace_posix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5DA02254DB780020F348 /* stack_trace_posix.cpp */; };
+		C2BC5DA62254DD510020F348 /* app in Resources */ = {isa = PBXBuildFile; fileRef = C2BC5DA52254DD510020F348 /* app */; };
+		C2BC5DA92254DFC80020F348 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C2BC5DA72254DFC80020F348 /* Console.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +41,35 @@
 		C2BC5D5E2254D7C60020F348 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2BC5D612254D7C60020F348 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2BC5D632254D7C60020F348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C2BC5D642254D7C60020F348 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C2BC5D642254D7C60020F348 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		C2BC5D7C2254D8580020F348 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = "test-v8/include"; sourceTree = "<group>"; };
+		C2BC5D7F2254D9320020F348 /* snapshot_blob.arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = snapshot_blob.arm64.h; path = "test-v8/snapshot/snapshot_blob.arm64.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5D802254D9320020F348 /* natives_blob.x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = natives_blob.x86_64.h; path = "test-v8/snapshot/natives_blob.x86_64.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5D812254D9320020F348 /* natives_blob.arm64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = natives_blob.arm64.h; path = "test-v8/snapshot/natives_blob.arm64.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5D822254D9320020F348 /* snapshot_blob.x86_64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = snapshot_blob.x86_64.h; path = "test-v8/snapshot/snapshot_blob.x86_64.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5D832254D9740020F348 /* ModuleInternal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModuleInternal.mm; sourceTree = "<group>"; };
+		C2BC5D842254D9740020F348 /* Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Runtime.h; sourceTree = "<group>"; };
+		C2BC5D852254D9740020F348 /* ModuleInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleInternal.h; sourceTree = "<group>"; };
+		C2BC5D862254D9740020F348 /* Runtime.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Runtime.mm; sourceTree = "<group>"; };
+		C2BC5D892254D99C0020F348 /* v8include.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = v8include.h; sourceTree = "<group>"; };
+		C2BC5D8A2254DA040020F348 /* Helpers.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Helpers.mm; sourceTree = "<group>"; };
+		C2BC5D8B2254DA040020F348 /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
+		C2BC5D8D2254DAA80020F348 /* libv8_libplatform.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libplatform.a; path = "test-v8/libs/libv8_libplatform.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D8E2254DAA80020F348 /* libv8_libsampler.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libsampler.a; path = "test-v8/libs/libv8_libsampler.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D8F2254DAA80020F348 /* libv8_libbase.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_libbase.a; path = "test-v8/libs/libv8_libbase.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D902254DAA80020F348 /* libv8_initializers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_initializers.a; path = "test-v8/libs/libv8_initializers.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D912254DAA80020F348 /* libv8_external_snapshot.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_external_snapshot.a; path = "test-v8/libs/libv8_external_snapshot.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D922254DAA80020F348 /* libv8_base.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_base.a; path = "test-v8/libs/libv8_base.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D932254DAA80020F348 /* libv8_init.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libv8_init.a; path = "test-v8/libs/libv8_init.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D942254DAA90020F348 /* libtorque_generated_initializers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtorque_generated_initializers.a; path = "test-v8/libs/libtorque_generated_initializers.a"; sourceTree = SOURCE_ROOT; };
+		C2BC5D9E2254DB780020F348 /* timezone-cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "timezone-cache.h"; path = "test-v8/V8Platform/timezone-cache.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5D9F2254DB780020F348 /* platform-ios.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = "platform-ios.cpp"; path = "test-v8/V8Platform/platform-ios.cpp"; sourceTree = SOURCE_ROOT; };
+		C2BC5DA02254DB780020F348 /* stack_trace_posix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stack_trace_posix.cpp; path = "test-v8/V8Platform/stack_trace_posix.cpp"; sourceTree = SOURCE_ROOT; };
+		C2BC5DA12254DB780020F348 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = "test-v8/V8Platform/platform.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5DA22254DB780020F348 /* stack_trace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack_trace.h; path = "test-v8/V8Platform/stack_trace.h"; sourceTree = SOURCE_ROOT; };
+		C2BC5DA52254DD510020F348 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; name = app; path = "test-v8/app"; sourceTree = "<group>"; };
+		C2BC5DA72254DFC80020F348 /* Console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Console.cpp; sourceTree = "<group>"; };
+		C2BC5DA82254DFC80020F348 /* Console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Console.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +77,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BC5D962254DAA90020F348 /* libv8_libsampler.a in Frameworks */,
+				C2BC5D992254DAA90020F348 /* libv8_external_snapshot.a in Frameworks */,
+				C2BC5D9A2254DAA90020F348 /* libv8_base.a in Frameworks */,
+				C2BC5D9B2254DAA90020F348 /* libv8_init.a in Frameworks */,
+				C2BC5D9C2254DAA90020F348 /* libtorque_generated_initializers.a in Frameworks */,
+				C2BC5D972254DAA90020F348 /* libv8_libbase.a in Frameworks */,
+				C2BC5D982254DAA90020F348 /* libv8_initializers.a in Frameworks */,
+				C2BC5D952254DAA90020F348 /* libv8_libplatform.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +94,12 @@
 		C2BC5D492254D7C20020F348 = {
 			isa = PBXGroup;
 			children = (
+				C2BC5DA52254DD510020F348 /* app */,
+				C2BC5D9D2254DB670020F348 /* V8Platform */,
+				C2BC5D7E2254D8DB0020F348 /* snapshot */,
+				C2BC5D7C2254D8580020F348 /* include */,
 				C2BC5D542254D7C20020F348 /* test-v8 */,
+				C2BC5D6B2254D81D0020F348 /* libs */,
 				C2BC5D532254D7C20020F348 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +115,15 @@
 		C2BC5D542254D7C20020F348 /* test-v8 */ = {
 			isa = PBXGroup;
 			children = (
+				C2BC5DA72254DFC80020F348 /* Console.cpp */,
+				C2BC5DA82254DFC80020F348 /* Console.h */,
+				C2BC5D8B2254DA040020F348 /* Helpers.h */,
+				C2BC5D8A2254DA040020F348 /* Helpers.mm */,
+				C2BC5D892254D99C0020F348 /* v8include.h */,
+				C2BC5D852254D9740020F348 /* ModuleInternal.h */,
+				C2BC5D832254D9740020F348 /* ModuleInternal.mm */,
+				C2BC5D842254D9740020F348 /* Runtime.h */,
+				C2BC5D862254D9740020F348 /* Runtime.mm */,
 				C2BC5D552254D7C20020F348 /* AppDelegate.h */,
 				C2BC5D562254D7C20020F348 /* AppDelegate.m */,
 				C2BC5D582254D7C20020F348 /* ViewController.h */,
@@ -66,9 +132,47 @@
 				C2BC5D5E2254D7C60020F348 /* Assets.xcassets */,
 				C2BC5D602254D7C60020F348 /* LaunchScreen.storyboard */,
 				C2BC5D632254D7C60020F348 /* Info.plist */,
-				C2BC5D642254D7C60020F348 /* main.m */,
+				C2BC5D642254D7C60020F348 /* main.mm */,
 			);
 			path = "test-v8";
+			sourceTree = "<group>";
+		};
+		C2BC5D6B2254D81D0020F348 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC5D942254DAA90020F348 /* libtorque_generated_initializers.a */,
+				C2BC5D922254DAA80020F348 /* libv8_base.a */,
+				C2BC5D912254DAA80020F348 /* libv8_external_snapshot.a */,
+				C2BC5D932254DAA80020F348 /* libv8_init.a */,
+				C2BC5D902254DAA80020F348 /* libv8_initializers.a */,
+				C2BC5D8F2254DAA80020F348 /* libv8_libbase.a */,
+				C2BC5D8D2254DAA80020F348 /* libv8_libplatform.a */,
+				C2BC5D8E2254DAA80020F348 /* libv8_libsampler.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		C2BC5D7E2254D8DB0020F348 /* snapshot */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC5D812254D9320020F348 /* natives_blob.arm64.h */,
+				C2BC5D802254D9320020F348 /* natives_blob.x86_64.h */,
+				C2BC5D7F2254D9320020F348 /* snapshot_blob.arm64.h */,
+				C2BC5D822254D9320020F348 /* snapshot_blob.x86_64.h */,
+			);
+			path = snapshot;
+			sourceTree = "<group>";
+		};
+		C2BC5D9D2254DB670020F348 /* V8Platform */ = {
+			isa = PBXGroup;
+			children = (
+				C2BC5D9F2254DB780020F348 /* platform-ios.cpp */,
+				C2BC5DA12254DB780020F348 /* platform.h */,
+				C2BC5DA02254DB780020F348 /* stack_trace_posix.cpp */,
+				C2BC5DA22254DB780020F348 /* stack_trace.h */,
+				C2BC5D9E2254DB780020F348 /* timezone-cache.h */,
+			);
+			path = V8Platform;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +234,9 @@
 			files = (
 				C2BC5D622254D7C60020F348 /* LaunchScreen.storyboard in Resources */,
 				C2BC5D5F2254D7C60020F348 /* Assets.xcassets in Resources */,
+				C2BC5DA62254DD510020F348 /* app in Resources */,
 				C2BC5D5D2254D7C20020F348 /* Main.storyboard in Resources */,
+				C2BC5D7D2254D8580020F348 /* include in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +247,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2BC5DA92254DFC80020F348 /* Console.cpp in Sources */,
+				C2BC5D872254D9740020F348 /* ModuleInternal.mm in Sources */,
+				C2BC5D8C2254DA040020F348 /* Helpers.mm in Sources */,
+				C2BC5D882254D9740020F348 /* Runtime.mm in Sources */,
 				C2BC5D5A2254D7C20020F348 /* ViewController.m in Sources */,
-				C2BC5D652254D7C60020F348 /* main.m in Sources */,
+				C2BC5DA42254DB780020F348 /* stack_trace_posix.cpp in Sources */,
+				C2BC5D652254D7C60020F348 /* main.mm in Sources */,
 				C2BC5D572254D7C20020F348 /* AppDelegate.m in Sources */,
+				C2BC5DA32254DB780020F348 /* platform-ios.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,14 +398,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7TGC3P93K;
 				INFOPLIST_FILE = "test-v8/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.test.test-v8";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-v8/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nativescript.test-v8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/test-v8/include";
 			};
 			name = Debug;
 		};
@@ -302,14 +421,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7TGC3P93K;
 				INFOPLIST_FILE = "test-v8/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.test.test-v8";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-v8/libs",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.nativescript.test-v8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/test-v8/include";
 			};
 			name = Release;
 		};
